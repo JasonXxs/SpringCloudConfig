@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    api-a:
+      path: /api-web/**
+      serviceId: consumer-web
+    api-b:
+      path: /api-shop/**
+      serviceId: consumer-shop
+
+server:
+  port: 29080
