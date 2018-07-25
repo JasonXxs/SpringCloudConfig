@@ -1,6 +1,6 @@
 #服务器端口
 server:
-  port: 29091
+  port: 29090
 
 eureka:
   client:
@@ -21,5 +21,4 @@ ribbon:
   ReadTimeout: 3000
   ConnectTimeout: 3000
 
-
-profile:pro
+profile:test
