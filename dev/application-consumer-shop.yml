@@ -10,7 +10,7 @@ eureka:
 #服务名称
 spring:
   application:
-    name: @pom.artifactId@
+    name: consumer-shop
 
 feign:
     hystrix:
