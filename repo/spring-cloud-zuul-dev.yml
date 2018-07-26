@@ -6,6 +6,23 @@ zuul:
     api-b:
       path: /api-shop/**
       serviceId: consumer-shop
+  host:
+    socket-timeout-millis: 6000
+    connect-timeout-millis: 6000
 
 server:
   port: 29080
+
+  
+
+ribbon:
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
+
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeout-in-milliseconds: 3000
